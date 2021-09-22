@@ -1,0 +1,65 @@
+{
+  "Java": {
+    "Students": [
+      {
+        "Student": "Cristiano Ronaldo",
+        "Classes Attended": 4
+      },
+      {
+        "Student": "Bruno Fernandes",
+        "Classes Attended": 3
+      },
+      {
+        "Student": "Mason Greenwood",
+        "Classes Attended": 3
+      },
+      {
+        "Student": "Rafael Varane",
+        "Classes Attended": 3
+      }
+    ],
+    "Total Classes": 5
+  },
+  "Python": {
+    "Students": [
+      {
+        "Student": "Jadon Sancho",
+        "Classes Attended": 4
+      },
+      {
+        "Student": "Cristiano Ronaldo",
+        "Classes Attended": 6
+      },
+      {
+        "Student": "Bruno Fernandes",
+        "Classes Attended": 3
+      },
+      {
+        "Student": "Mason Greenwood",
+        "Classes Attended": 7
+      }
+    ],
+    "Total Classes": 8
+  },
+  "Node": {
+    "Students": [
+      {
+        "Student": "McTominay",
+        "Classes Attended": 3
+      },
+      {
+        "Student": "Anthony Elanga",
+        "Classes Attended": 15
+      },
+      {
+        "Student": "Juan Mata",
+        "Classes Attended": 18
+      },
+      {
+        "Student": "George Best",
+        "Classes Attended": 20
+      }
+    ],
+    "Total Classes": 20
+  }
+}

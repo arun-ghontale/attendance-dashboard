@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link crossorigin="anonymous" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" rel="stylesheet">
+    <script crossorigin="anonymous" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script crossorigin="anonymous"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+    <link crossorigin="anonymous" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+          rel="stylesheet"/>
+    <script crossorigin="anonymous"
+            src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
+    <style>
+        {{ css_content }}
+
+
+    </style>
+
+</head>
+<body>
+
+<!-- Navbar with dropdown and send report button -->
+<nav class="navbar navbar-expand-xl navbar-light py-4" style="background-color: #e3f2fd">
+    <a class="navbar-brand" href="#"><h2>Student Dashboard</h2></a>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a aria-expanded="false" aria-haspopup="true" class="nav-link dropdown-toggle" data-toggle="dropdown"
+                   href="#"
+                   id="navbarDropdown" role="button">
+                    <h3>Select Class</h3>
+                </a>
+                <div aria-labelledby="navbarDropdown" class="dropdown-menu" id="classes-dropdown"></div>
+            </li>
+        </ul>
+        <a class="navbar-brand" href="#">
+            <button class="btn btn-outline-danger" data-target="#send-report-modal" data-toggle="modal"
+                    id="send-report-btn"
+                    type="submit"><h5>Send Report</h5>
+            </button>
+        </a>
+    </div>
+</nav>
+
+<!-- Attendance List -->
+<div id="attendance-list">
+</div>
+
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="send-report-modal" role="dialog"
+     tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Send Report</h5>
+                <button aria-label="Close" class="close" data-dismiss="modal" type="button">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                Are you sure you want to send the attendance report?
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-primary" id="send-report-yes" onclick="sendReport()" type="button">Yes</button>
+                <button class="btn btn-secondary" data-dismiss="modal" id="send-report-no" type="button">No</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    {{ js_content }}
+
+
+</script>
+
+</html>
